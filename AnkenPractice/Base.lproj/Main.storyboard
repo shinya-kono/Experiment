@@ -18,46 +18,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxp-tS-jl4">
-                                <rect key="frame" x="20" y="288.5" width="335" height="90"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eZ-CU-lxs">
+                                <rect key="frame" x="20" y="84" width="335" height="44"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="jfj-yQ-WZy"/>
+                                    <constraint firstAttribute="height" constant="44" id="0Mz-Xy-i3Y"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryZ-zu-7eM">
-                                <rect key="frame" x="20" y="398.5" width="335" height="30"/>
-                                <state key="normal" title="キーボード画面へ"/>
+                                <state key="normal" title="テキストエリアキーボード">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="changeColorClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8xH-iU-UNE"/>
+                                    <action selector="textAreaTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7cB-v0-bq6"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vcq-Y8-EtD" customClass="CustomView" customModule="AnkenPractice" customModuleProvider="target">
-                                <rect key="frame" x="20" y="164" width="335" height="74.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryZ-zu-7eM">
+                                <rect key="frame" x="20" y="148" width="335" height="44"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Fcf-bL-2un"/>
+                                </constraints>
+                                <state key="normal" title="記号キーボード">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="symbolTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j5A-ZT-Nbl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qxp-tS-jl4" firstAttribute="trailing" secondItem="ryZ-zu-7eM" secondAttribute="trailing" id="5YG-Sf-sWg"/>
-                            <constraint firstItem="qxp-tS-jl4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ChB-SX-ORu"/>
-                            <constraint firstItem="qxp-tS-jl4" firstAttribute="leading" secondItem="ryZ-zu-7eM" secondAttribute="leading" id="Dhj-RV-yiJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qxp-tS-jl4" secondAttribute="trailing" constant="20" id="EHN-mw-PmD"/>
-                            <constraint firstItem="qxp-tS-jl4" firstAttribute="top" secondItem="Vcq-Y8-EtD" secondAttribute="bottom" constant="50" id="LLD-me-OEr"/>
-                            <constraint firstItem="Vcq-Y8-EtD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SHv-zo-oX5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vcq-Y8-EtD" secondAttribute="trailing" constant="20" id="W2g-Is-B6J"/>
-                            <constraint firstItem="qxp-tS-jl4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XY3-WG-tkB"/>
-                            <constraint firstItem="Vcq-Y8-EtD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ZdQ-Jq-7N2"/>
-                            <constraint firstItem="ryZ-zu-7eM" firstAttribute="top" secondItem="qxp-tS-jl4" secondAttribute="bottom" constant="20" id="alM-cQ-x7X"/>
+                            <constraint firstItem="ryZ-zu-7eM" firstAttribute="top" secondItem="1eZ-CU-lxs" secondAttribute="bottom" constant="20" id="2oJ-Wj-LZH"/>
+                            <constraint firstItem="1eZ-CU-lxs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HQz-nd-mBL"/>
+                            <constraint firstItem="1eZ-CU-lxs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="XTU-zC-gOh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1eZ-CU-lxs" secondAttribute="trailing" constant="20" id="ojS-mf-e0u"/>
+                            <constraint firstItem="ryZ-zu-7eM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="pD5-kB-ZFE"/>
+                            <constraint firstItem="ryZ-zu-7eM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sZq-S1-Taz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="WNL-2t-gWT"/>
-                    <connections>
-                        <outlet property="helloLabel" destination="qxp-tS-jl4" id="HdO-EY-hvX"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

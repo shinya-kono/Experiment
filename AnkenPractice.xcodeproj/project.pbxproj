@@ -23,6 +23,8 @@
 		D5810E20223295C300BA0B14 /* InputViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5810E1F223295C300BA0B14 /* InputViewTestViewController.swift */; };
 		D5810E222232A30500BA0B14 /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5810E212232A30500BA0B14 /* CustomImage.swift */; };
 		D5810E2422349AFD00BA0B14 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5810E2322349AFD00BA0B14 /* CustomButton.swift */; };
+		D5810E272234F7BD00BA0B14 /* TextView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5810E262234F7BD00BA0B14 /* TextView.storyboard */; };
+		D5810E292234F89C00BA0B14 /* TextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5810E282234F89C00BA0B14 /* TextViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		D5810E1F223295C300BA0B14 /* InputViewTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewTestViewController.swift; sourceTree = "<group>"; };
 		D5810E212232A30500BA0B14 /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
 		D5810E2322349AFD00BA0B14 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		D5810E262234F7BD00BA0B14 /* TextView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TextView.storyboard; sourceTree = "<group>"; };
+		D5810E282234F89C00BA0B14 /* TextViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewViewController.swift; sourceTree = "<group>"; };
 		FC5AE74AE4E0CBC0F8FAAC55 /* Pods-AnkenPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnkenPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnkenPractice/Pods-AnkenPractice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +134,7 @@
 		D5810E12222BC05400BA0B14 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D5810E252234F72600BA0B14 /* textViewTest */,
 				D5810E182232881700BA0B14 /* inputViewTest */,
 				D5810E15222BC07700BA0B14 /* Second */,
 			);
@@ -156,6 +161,15 @@
 				D5810E2322349AFD00BA0B14 /* CustomButton.swift */,
 			);
 			path = inputViewTest;
+			sourceTree = "<group>";
+		};
+		D5810E252234F72600BA0B14 /* textViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				D5810E262234F7BD00BA0B14 /* TextView.storyboard */,
+				D5810E282234F89C00BA0B14 /* TextViewViewController.swift */,
+			);
+			path = textViewTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +234,7 @@
 			files = (
 				D5810E1A2232884600BA0B14 /* Keyboard.xib in Resources */,
 				D5810E0E222BBA6E00BA0B14 /* CustomView.xib in Resources */,
+				D5810E272234F7BD00BA0B14 /* TextView.storyboard in Resources */,
 				D5810E05222BB54A00BA0B14 /* LaunchScreen.storyboard in Resources */,
 				D5810E02222BB54A00BA0B14 /* Assets.xcassets in Resources */,
 				D5810E14222BC06C00BA0B14 /* Second.storyboard in Resources */,
@@ -275,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5810E222232A30500BA0B14 /* CustomImage.swift in Sources */,
+				D5810E292234F89C00BA0B14 /* TextViewViewController.swift in Sources */,
 				D5810E20223295C300BA0B14 /* InputViewTestViewController.swift in Sources */,
 				D5810E17222BC09400BA0B14 /* SecondViewController.swift in Sources */,
 				D5810E11222BBB7500BA0B14 /* CustomView.swift in Sources */,
