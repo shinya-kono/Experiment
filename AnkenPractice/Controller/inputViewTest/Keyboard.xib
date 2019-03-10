@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad12_9rounded" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -253,13 +252,12 @@
                 </stackView>
             </subviews>
             <constraints>
-                <constraint firstItem="5S3-LZ-afs" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="VLg-9c-q0M"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5S3-LZ-afs" secondAttribute="trailing" constant="5" id="dFL-jf-oPj"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="5S3-LZ-afs" secondAttribute="bottom" constant="5" id="hzm-RV-bz3"/>
-                <constraint firstItem="5S3-LZ-afs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="kKv-Nx-hOg"/>
+                <constraint firstItem="5S3-LZ-afs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="VLg-9c-q0M"/>
+                <constraint firstAttribute="trailing" secondItem="5S3-LZ-afs" secondAttribute="trailing" constant="5" id="dFL-jf-oPj"/>
+                <constraint firstAttribute="bottom" secondItem="5S3-LZ-afs" secondAttribute="bottom" constant="5" id="hzm-RV-bz3"/>
+                <constraint firstItem="5S3-LZ-afs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="kKv-Nx-hOg"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="-30.399999999999999" y="-17.091454272863569"/>
         </view>
     </objects>
