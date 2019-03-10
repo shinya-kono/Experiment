@@ -29,4 +29,10 @@ class CustomButton: UIButton {
     @objc func didTapped(sender: CustomButton) {
         delegate.customButtonTapped(sender: sender, keyNumber: self.keyNumber)
     }
+    
+    override var isHighlighted: Bool {
+        didSet {
+            backgroundColor = isHighlighted ? UIColor.gray : UIColor.white
+        }
+    }
 }
