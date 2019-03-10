@@ -20,6 +20,7 @@ class InputViewTestViewController: UIViewController, CustomImageDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         self.imageView.becomeFirstResponder()
+        self.title = "エンジンオイルの漏れあああああああああああああ"
     }
     
     func doneTapped(sender: CustomImage, keyNumber: Int) {
@@ -32,7 +33,8 @@ class InputViewTestViewController: UIViewController, CustomImageDelegate {
     }
     
     func clearTapped(sender: CustomImage) {
-        self.navigationController?.popViewController(animated: true)
+        self.imageView.resignFirstResponder()
+//        self.navigationController?.popViewController(animated: true)
     }
     
 }
