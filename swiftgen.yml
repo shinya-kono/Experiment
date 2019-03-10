@@ -1,0 +1,5 @@
+ib:
+  inputs: /AnkenPractice/AnkenPractice/Controller/*
+  outputs:
+    - templateName: scenes-swift4
+      output: /AnkenPractice/Resources/Generated/Storyboards.swift

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Xb-bN-BMW">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Input View Test View Controller-->
+        <scene sceneID="5hF-4A-oLQ">
+            <objects>
+                <viewController id="6Xb-bN-BMW" customClass="InputViewTestViewController" customModule="AnkenPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qgY-J2-7kL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eQ5-vx-8lr" customClass="CustomImage" customModule="AnkenPractice" customModuleProvider="target">
+                                <rect key="frame" x="140.66666666666666" y="104.66666666666666" width="93.666666666666657" height="93.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="132" id="oMl-Ni-Yds"/>
+                                    <constraint firstAttribute="width" secondItem="eQ5-vx-8lr" secondAttribute="height" multiplier="1:1" id="peB-dF-nQ5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="項目名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8F8-d8-YEC">
+                                <rect key="frame" x="20" y="63.999999999999993" width="335" height="20.666666666666664"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s9x-1Q-cKs">
+                                <rect key="frame" x="0.0" y="718" width="375" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="E1G-qc-Bpm" firstAttribute="trailing" secondItem="s9x-1Q-cKs" secondAttribute="trailing" id="4WO-gc-cY2"/>
+                            <constraint firstItem="8F8-d8-YEC" firstAttribute="top" secondItem="E1G-qc-Bpm" secondAttribute="top" constant="20" id="8CE-Ve-Hd5"/>
+                            <constraint firstItem="E1G-qc-Bpm" firstAttribute="bottom" secondItem="s9x-1Q-cKs" secondAttribute="bottom" constant="20" id="D3k-E4-RQg"/>
+                            <constraint firstItem="s9x-1Q-cKs" firstAttribute="leading" secondItem="E1G-qc-Bpm" secondAttribute="leading" id="NTW-CH-jqq"/>
+                            <constraint firstItem="eQ5-vx-8lr" firstAttribute="width" secondItem="qgY-J2-7kL" secondAttribute="width" multiplier="1:4" priority="750" id="RMz-68-dvf"/>
+                            <constraint firstItem="eQ5-vx-8lr" firstAttribute="centerX" secondItem="qgY-J2-7kL" secondAttribute="centerX" id="d3i-zr-nTp"/>
+                            <constraint firstItem="E1G-qc-Bpm" firstAttribute="trailing" secondItem="8F8-d8-YEC" secondAttribute="trailing" constant="20" id="oTr-hK-YO8"/>
+                            <constraint firstItem="8F8-d8-YEC" firstAttribute="leading" secondItem="E1G-qc-Bpm" secondAttribute="leading" constant="20" id="t1x-XA-PAh"/>
+                            <constraint firstItem="eQ5-vx-8lr" firstAttribute="top" secondItem="8F8-d8-YEC" secondAttribute="bottom" constant="20" id="yRc-AR-QBh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="E1G-qc-Bpm"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="eQ5-vx-8lr" id="t6m-PM-8Rx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="68Q-Zx-3zm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="350" y="-9"/>
+        </scene>
+    </scenes>
+</document>

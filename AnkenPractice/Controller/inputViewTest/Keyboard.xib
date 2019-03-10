@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardView" customModule="AnkenPractice" customModuleProvider="target">
+            <connections>
+                <outlet property="button1" destination="60h-qm-BNW" id="xHw-Cu-nhp"/>
+                <outlet property="button10" destination="AQ8-dE-0Pc" id="tBe-LI-f49"/>
+                <outlet property="button11" destination="78p-af-Ivo" id="E56-g0-Xem"/>
+                <outlet property="button12" destination="7Dp-i6-Wed" id="Fjp-Zy-7Km"/>
+                <outlet property="button13" destination="HUO-IR-smT" id="ja4-Gl-2Ow"/>
+                <outlet property="button14" destination="bSk-Gp-Fyt" id="jJG-5f-WSz"/>
+                <outlet property="button15" destination="CWf-Wb-msq" id="UHL-44-zVi"/>
+                <outlet property="button16" destination="bAT-mP-rvn" id="HCK-5c-GxQ"/>
+                <outlet property="button17" destination="kJe-I3-9mh" id="pBz-8h-QzR"/>
+                <outlet property="button2" destination="eEO-d6-fXn" id="qsr-Sb-9Hs"/>
+                <outlet property="button3" destination="DE8-BS-qjK" id="5Lq-bv-50w"/>
+                <outlet property="button4" destination="xZx-du-fhJ" id="7R4-ll-aOG"/>
+                <outlet property="button5" destination="ihz-3D-7s8" id="CIe-O3-bSY"/>
+                <outlet property="button7" destination="JWR-Cn-qTc" id="jf2-zL-tLw"/>
+                <outlet property="button8" destination="QBu-oz-t20" id="QeW-Rr-Dzl"/>
+                <outlet property="button9" destination="tZb-wq-ZS3" id="s9m-nC-Bu2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="488" height="170"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5S3-LZ-afs">
+                    <rect key="frame" x="5" y="5" width="478" height="160"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="JF1-fL-PRr">
+                            <rect key="frame" x="0.0" y="0.0" width="478" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60h-qm-BNW" customClass="CustomButton" customModule="AnkenPractice" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="91.5" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="Fm5-pS-UFT"/>
+                                    </constraints>
+                                    <state key="normal" image="sample"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyNumber">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEO-d6-fXn" customClass="CustomButton" customModule="AnkenPractice" customModuleProvider="target">
+                                    <rect key="frame" x="96.5" y="0.0" width="91.5" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="sample"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyNumber">
+                                            <integer key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DE8-BS-qjK" customClass="CustomButton" customModule="AnkenPractice" customModuleProvider="target">
+                                    <rect key="frame" x="193" y="0.0" width="92" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="sample"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyNumber">
+                                            <integer key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZx-du-fhJ" customClass="CustomButton" customModule="AnkenPractice" customModuleProvider="target">
+                                    <rect key="frame" x="290" y="0.0" width="91.5" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="sample"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyNumber">
+                                            <integer key="value" value="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihz-3D-7s8" customClass="CustomButton" customModule="AnkenPractice" customModuleProvider="target">
+                                    <rect key="frame" x="386.5" y="0.0" width="91.5" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="sample"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyNumber">
+                                            <integer key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="xZx-du-fhJ" firstAttribute="height" secondItem="60h-qm-BNW" secondAttribute="height" id="0L4-sf-3Co"/>
+                                <constraint firstItem="eEO-d6-fXn" firstAttribute="height" secondItem="60h-qm-BNW" secondAttribute="height" id="Gnp-ve-zI8"/>
+                                <constraint firstItem="ihz-3D-7s8" firstAttribute="height" secondItem="60h-qm-BNW" secondAttribute="height" id="ePb-1r-jJt"/>
+                                <constraint firstItem="DE8-BS-qjK" firstAttribute="height" secondItem="60h-qm-BNW" secondAttribute="height" id="pr9-av-C4A"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bAR-6o-zEy">
+                            <rect key="frame" x="0.0" y="55" width="478" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWR-Cn-qTc" customClass="CustomButton" customModule="AnkenPractice" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="91.5" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="K7I-H9-dfq"/>
+                                    </constraints>
+                                    <state key="normal" image="sample"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyNumber">
+                                            <integer key="value" value="7"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBu-oz-t20" customClass="CustomButton" customModule="AnkenPractice" customModuleProvider="target">
+                                    <rect key="frame" x="96.5" y="0.0" width="91.5" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="sample"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyNumber">
+                                            <integer key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZb-wq-ZS3" customClass="CustomButton" customModule="AnkenPractice" customModuleProvider="target">
+                                    <rect key="frame" x="193" y="0.0" width="92" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="sample"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyNumber">
+                                            <integer key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQ8-dE-0Pc" customClass="CustomButton" customModule="AnkenPractice" customModuleProvider="target">
+                                    <rect key="frame" x="290" y="0.0" width="91.5" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="sample"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyNumber">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78p-af-Ivo" customClass="CustomButton" customModule="AnkenPractice" customModuleProvider="target">
+                                    <rect key="frame" x="386.5" y="0.0" width="91.5" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="sample"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyNumber">
+                                            <integer key="value" value="11"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="78p-af-Ivo" firstAttribute="height" secondItem="JWR-Cn-qTc" secondAttribute="height" id="Efu-da-J30"/>
+                                <constraint firstItem="tZb-wq-ZS3" firstAttribute="height" secondItem="JWR-Cn-qTc" secondAttribute="height" id="SKM-S2-yjB"/>
+                                <constraint firstItem="QBu-oz-t20" firstAttribute="height" secondItem="JWR-Cn-qTc" secondAttribute="height" id="TmN-du-59F"/>
+                                <constraint firstItem="AQ8-dE-0Pc" firstAttribute="height" secondItem="JWR-Cn-qTc" secondAttribute="height" id="TwZ-Fr-cXS"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="48t-k0-otY">
+                            <rect key="frame" x="0.0" y="110" width="478" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dp-i6-Wed" customClass="CustomButton" customModule="AnkenPractice" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="75.5" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="XHt-gu-niA"/>
+                                    </constraints>
+                                    <state key="normal" image="sample"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyNumber">
+                                            <integer key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUO-IR-smT" customClass="CustomButton" customModule="AnkenPractice" customModuleProvider="target">
+                                    <rect key="frame" x="80.5" y="0.0" width="75.5" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="sample"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyNumber">
+                                            <integer key="value" value="13"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSk-Gp-Fyt" customClass="CustomButton" customModule="AnkenPractice" customModuleProvider="target">
+                                    <rect key="frame" x="161" y="0.0" width="75.5" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="sample"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyNumber">
+                                            <integer key="value" value="14"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWf-Wb-msq" customClass="CustomButton" customModule="AnkenPractice" customModuleProvider="target">
+                                    <rect key="frame" x="241.5" y="0.0" width="75.5" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="sample"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyNumber">
+                                            <integer key="value" value="15"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAT-mP-rvn" customClass="CustomButton" customModule="AnkenPractice" customModuleProvider="target">
+                                    <rect key="frame" x="322" y="0.0" width="75.5" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="sample"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyNumber">
+                                            <integer key="value" value="16"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJe-I3-9mh" customClass="CustomButton" customModule="AnkenPractice" customModuleProvider="target">
+                                    <rect key="frame" x="402.5" y="0.0" width="75.5" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="sample"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyNumber">
+                                            <integer key="value" value="17"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="kJe-I3-9mh" firstAttribute="height" secondItem="7Dp-i6-Wed" secondAttribute="height" id="BdX-qi-wsJ"/>
+                                <constraint firstItem="bSk-Gp-Fyt" firstAttribute="height" secondItem="7Dp-i6-Wed" secondAttribute="height" id="gIC-pW-vPc"/>
+                                <constraint firstItem="bAT-mP-rvn" firstAttribute="height" secondItem="7Dp-i6-Wed" secondAttribute="height" id="mtb-vH-TxG"/>
+                                <constraint firstItem="CWf-Wb-msq" firstAttribute="height" secondItem="7Dp-i6-Wed" secondAttribute="height" id="pVG-ou-fN1"/>
+                                <constraint firstItem="HUO-IR-smT" firstAttribute="height" secondItem="7Dp-i6-Wed" secondAttribute="height" id="uNw-nf-rvT"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="bAR-6o-zEy" secondAttribute="trailing" id="4JX-5I-5Me"/>
+                        <constraint firstAttribute="trailing" secondItem="48t-k0-otY" secondAttribute="trailing" id="8yz-0Y-IZz"/>
+                        <constraint firstAttribute="trailing" secondItem="JF1-fL-PRr" secondAttribute="trailing" id="eft-QT-rPC"/>
+                        <constraint firstItem="bAR-6o-zEy" firstAttribute="leading" secondItem="5S3-LZ-afs" secondAttribute="leading" id="gTD-Pk-2Zt"/>
+                        <constraint firstItem="JF1-fL-PRr" firstAttribute="leading" secondItem="5S3-LZ-afs" secondAttribute="leading" id="z01-yd-unt"/>
+                        <constraint firstItem="48t-k0-otY" firstAttribute="leading" secondItem="5S3-LZ-afs" secondAttribute="leading" id="zBi-7c-7W6"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="5S3-LZ-afs" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="VLg-9c-q0M"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5S3-LZ-afs" secondAttribute="trailing" constant="5" id="dFL-jf-oPj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="5S3-LZ-afs" secondAttribute="bottom" constant="5" id="hzm-RV-bz3"/>
+                <constraint firstItem="5S3-LZ-afs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="kKv-Nx-hOg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-30.399999999999999" y="-17.091454272863569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sample" width="44" height="44"/>
+    </resources>
+</document>

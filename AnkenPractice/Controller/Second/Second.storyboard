@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FDN-aD-YCi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--aaa-->
+        <scene sceneID="gyF-dS-KSa">
+            <objects>
+                <viewController title="aaa" id="FDN-aD-YCi" customClass="SecondViewController" customModule="AnkenPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SPk-BS-0P6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VhJ-Ba-cYu">
+                                <rect key="frame" x="0.0" y="70" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SO5-80-PGC">
+                                        <rect key="frame" x="0.0" y="0.0" width="183.5" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="DHm-Fr-ygM"/>
+                                        </constraints>
+                                        <state key="normal" image="sample"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Zv-8p-yyA">
+                                        <rect key="frame" x="191.5" y="3" width="183.5" height="44"/>
+                                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="sample"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pVu-Z4-CYT"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VhJ-Ba-cYu" firstAttribute="top" secondItem="zZd-Pd-pSj" secondAttribute="top" constant="50" id="16B-gx-i6j"/>
+                            <constraint firstItem="zZd-Pd-pSj" firstAttribute="bottom" secondItem="VhJ-Ba-cYu" secondAttribute="bottom" constant="50" id="bi1-qE-FQE"/>
+                            <constraint firstItem="zZd-Pd-pSj" firstAttribute="trailing" secondItem="VhJ-Ba-cYu" secondAttribute="trailing" id="e4g-wo-snk"/>
+                            <constraint firstItem="VhJ-Ba-cYu" firstAttribute="leading" secondItem="zZd-Pd-pSj" secondAttribute="leading" id="oB4-Ip-4Md"/>
+                            <constraint firstItem="VhJ-Ba-cYu" firstAttribute="leading" secondItem="zZd-Pd-pSj" secondAttribute="leading" id="tcN-9E-Sdz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zZd-Pd-pSj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BMq-pq-zFT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="22.938530734632685"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sample" width="44" height="44"/>
+    </resources>
+</document>

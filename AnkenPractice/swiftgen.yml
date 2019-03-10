@@ -1,0 +1,17 @@
+// 画像リソース用
+xcassets:
+  paths:  "$PROJECT_NAME"/Resources/Assets.xcassets                 # 入力パス
+  templateName: swift4                                      　　　　　　　　　　　　　　　　　　# テンプレート指定
+  output: "$PROJECT_NAME"/Resources/Generated/DefaultAsset.swift     # 生成パス
+
+// ローカライズ用
+strings:
+  paths: "$PROJECT_NAME"/Resources/Strings/en.lproj/Localizable.strings
+  templateName: structured-swift4
+  output: "$PROJECT_NAME"/Resources/Generated/Localized.swift
+
+// Storyboard用
+storyboards:
+  paths: "$PROJECT_NAME"/Scenes/Storyboards/Base.lproj
+  templateName: swift4
+  output: "$PROJECT_NAME"/Resources/Generated/Storyboards.swift
