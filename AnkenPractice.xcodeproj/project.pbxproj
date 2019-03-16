@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		018C9B7F98DB10DD91E6EBC6 /* Pods_AnkenPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27A4194A4F9956BED1DABED /* Pods_AnkenPractice.framework */; };
+		D5719345223CB591007CA8E8 /* ShowQRInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5719344223CB591007CA8E8 /* ShowQRInfoViewController.swift */; };
 		D5810DFB222BB54700BA0B14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5810DFA222BB54700BA0B14 /* AppDelegate.swift */; };
 		D5810DFD222BB54700BA0B14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5810DFC222BB54700BA0B14 /* ViewController.swift */; };
 		D5810E00222BB54700BA0B14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5810DFE222BB54700BA0B14 /* Main.storyboard */; };
@@ -25,11 +26,17 @@
 		D5810E2422349AFD00BA0B14 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5810E2322349AFD00BA0B14 /* CustomButton.swift */; };
 		D5810E272234F7BD00BA0B14 /* TextView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5810E262234F7BD00BA0B14 /* TextView.storyboard */; };
 		D5810E292234F89C00BA0B14 /* TextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5810E282234F89C00BA0B14 /* TextViewViewController.swift */; };
+		D5E6ECCF2236997C00C7B736 /* Animation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E6ECCE2236997C00C7B736 /* Animation.storyboard */; };
+		D5E6ECD12236999500C7B736 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E6ECD02236999500C7B736 /* AnimationViewController.swift */; };
+		D5E6ECD4223C824100C7B736 /* QRReaderView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E6ECD3223C824100C7B736 /* QRReaderView.storyboard */; };
+		D5E6ECD6223C828500C7B736 /* QRReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E6ECD5223C828500C7B736 /* QRReaderViewController.swift */; };
+		D5E6ECD8223C9EDF00C7B736 /* Binary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E6ECD7223C9EDF00C7B736 /* Binary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F387261F106CAF80825145F /* Pods-AnkenPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnkenPractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnkenPractice/Pods-AnkenPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		C27A4194A4F9956BED1DABED /* Pods_AnkenPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnkenPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5719344223CB591007CA8E8 /* ShowQRInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowQRInfoViewController.swift; sourceTree = "<group>"; };
 		D5810DF7222BB54700BA0B14 /* AnkenPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnkenPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5810DFA222BB54700BA0B14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5810DFC222BB54700BA0B14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +56,11 @@
 		D5810E2322349AFD00BA0B14 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		D5810E262234F7BD00BA0B14 /* TextView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TextView.storyboard; sourceTree = "<group>"; };
 		D5810E282234F89C00BA0B14 /* TextViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewViewController.swift; sourceTree = "<group>"; };
+		D5E6ECCE2236997C00C7B736 /* Animation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Animation.storyboard; sourceTree = "<group>"; };
+		D5E6ECD02236999500C7B736 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		D5E6ECD3223C824100C7B736 /* QRReaderView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRReaderView.storyboard; sourceTree = "<group>"; };
+		D5E6ECD5223C828500C7B736 /* QRReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReaderViewController.swift; sourceTree = "<group>"; };
+		D5E6ECD7223C9EDF00C7B736 /* Binary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binary.swift; sourceTree = "<group>"; };
 		FC5AE74AE4E0CBC0F8FAAC55 /* Pods-AnkenPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnkenPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnkenPractice/Pods-AnkenPractice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +146,8 @@
 		D5810E12222BC05400BA0B14 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D5E6ECD2223C822A00C7B736 /* QRReader */,
+				D5E6ECCD2236994900C7B736 /* Animation */,
 				D5810E252234F72600BA0B14 /* textViewTest */,
 				D5810E182232881700BA0B14 /* inputViewTest */,
 				D5810E15222BC07700BA0B14 /* Second */,
@@ -170,6 +184,26 @@
 				D5810E282234F89C00BA0B14 /* TextViewViewController.swift */,
 			);
 			path = textViewTest;
+			sourceTree = "<group>";
+		};
+		D5E6ECCD2236994900C7B736 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				D5E6ECCE2236997C00C7B736 /* Animation.storyboard */,
+				D5E6ECD02236999500C7B736 /* AnimationViewController.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		D5E6ECD2223C822A00C7B736 /* QRReader */ = {
+			isa = PBXGroup;
+			children = (
+				D5E6ECD3223C824100C7B736 /* QRReaderView.storyboard */,
+				D5E6ECD5223C828500C7B736 /* QRReaderViewController.swift */,
+				D5E6ECD7223C9EDF00C7B736 /* Binary.swift */,
+				D5719344223CB591007CA8E8 /* ShowQRInfoViewController.swift */,
+			);
+			path = QRReader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,10 +266,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E6ECCF2236997C00C7B736 /* Animation.storyboard in Resources */,
 				D5810E1A2232884600BA0B14 /* Keyboard.xib in Resources */,
 				D5810E0E222BBA6E00BA0B14 /* CustomView.xib in Resources */,
 				D5810E272234F7BD00BA0B14 /* TextView.storyboard in Resources */,
 				D5810E05222BB54A00BA0B14 /* LaunchScreen.storyboard in Resources */,
+				D5E6ECD4223C824100C7B736 /* QRReaderView.storyboard in Resources */,
 				D5810E02222BB54A00BA0B14 /* Assets.xcassets in Resources */,
 				D5810E14222BC06C00BA0B14 /* Second.storyboard in Resources */,
 				D5810E1E2232959F00BA0B14 /* InputViewTestView.storyboard in Resources */,
@@ -290,13 +326,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5810E222232A30500BA0B14 /* CustomImage.swift in Sources */,
+				D5E6ECD6223C828500C7B736 /* QRReaderViewController.swift in Sources */,
 				D5810E292234F89C00BA0B14 /* TextViewViewController.swift in Sources */,
 				D5810E20223295C300BA0B14 /* InputViewTestViewController.swift in Sources */,
+				D5E6ECD8223C9EDF00C7B736 /* Binary.swift in Sources */,
 				D5810E17222BC09400BA0B14 /* SecondViewController.swift in Sources */,
 				D5810E11222BBB7500BA0B14 /* CustomView.swift in Sources */,
 				D5810E2422349AFD00BA0B14 /* CustomButton.swift in Sources */,
 				D5810DFD222BB54700BA0B14 /* ViewController.swift in Sources */,
+				D5E6ECD12236999500C7B736 /* AnimationViewController.swift in Sources */,
 				D5810E1C2232893400BA0B14 /* KeyboardView.swift in Sources */,
+				D5719345223CB591007CA8E8 /* ShowQRInfoViewController.swift in Sources */,
 				D5810DFB222BB54700BA0B14 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -27,5 +27,12 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(next, animated: true)
     }
     
+    @IBAction func animationTapped(_ sender: Any) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Animation", bundle: nil)
+        let next: UIViewController = storyboard.instantiateInitialViewController() as! UIViewController
+        self.navigationController?.pushViewController(next, animated: true)
+    }
+    
+    
 }
 

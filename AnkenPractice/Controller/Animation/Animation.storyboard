@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ffe-NH-Bbe">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animation View Controller-->
+        <scene sceneID="OfK-KE-G2g">
+            <objects>
+                <viewController id="ffe-NH-Bbe" customClass="AnimationViewController" customModule="AnkenPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e8V-n3-e4F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hmb-Cg-K4o">
+                                <rect key="frame" x="20" y="40" width="335" height="42"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKK-D2-7du">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Keb-uH-cKh">
+                                        <rect key="frame" x="0.0" y="12" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="textChanged:" destination="ffe-NH-Bbe" eventType="editingChanged" id="h9o-GO-Upc"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p14-YW-l3h">
+                                <rect key="frame" x="20" y="617" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="ffe-NH-Bbe" eventType="touchUpInside" id="Bai-Xx-g4e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zwD-w8-42u" firstAttribute="bottom" secondItem="p14-YW-l3h" secondAttribute="bottom" constant="20" id="65b-Ju-DXJ"/>
+                            <constraint firstItem="p14-YW-l3h" firstAttribute="leading" secondItem="zwD-w8-42u" secondAttribute="leading" constant="20" id="6cn-ha-lDd"/>
+                            <constraint firstItem="hmb-Cg-K4o" firstAttribute="leading" secondItem="zwD-w8-42u" secondAttribute="leading" constant="20" id="JOD-xA-m6y"/>
+                            <constraint firstItem="zwD-w8-42u" firstAttribute="trailing" secondItem="p14-YW-l3h" secondAttribute="trailing" constant="20" id="Kq5-Hk-3rR"/>
+                            <constraint firstItem="hmb-Cg-K4o" firstAttribute="top" secondItem="zwD-w8-42u" secondAttribute="top" constant="20" id="fok-Te-87p"/>
+                            <constraint firstItem="zwD-w8-42u" firstAttribute="trailing" secondItem="hmb-Cg-K4o" secondAttribute="trailing" constant="20" id="uFd-mJ-8B9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zwD-w8-42u"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationLabel" destination="qKK-D2-7du" id="R1d-0Y-EoC"/>
+                        <outlet property="stackView" destination="hmb-Cg-K4o" id="mir-BI-kT7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pAP-sW-u3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191" y="-54"/>
+        </scene>
+    </scenes>
+</document>

@@ -44,12 +44,28 @@
                                     <action selector="symbolTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j5A-ZT-Nbl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8c8-nM-AF0">
+                                <rect key="frame" x="20" y="212" width="335" height="44"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Rdh-DD-ucK"/>
+                                </constraints>
+                                <state key="normal" title="アニメーション">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="animationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mkw-Vh-2KD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ryZ-zu-7eM" firstAttribute="top" secondItem="1eZ-CU-lxs" secondAttribute="bottom" constant="20" id="2oJ-Wj-LZH"/>
+                            <constraint firstAttribute="trailing" secondItem="8c8-nM-AF0" secondAttribute="trailing" constant="20" id="FR1-y9-yqC"/>
                             <constraint firstItem="1eZ-CU-lxs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HQz-nd-mBL"/>
+                            <constraint firstItem="8c8-nM-AF0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MZV-FH-h2o"/>
                             <constraint firstItem="1eZ-CU-lxs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="XTU-zC-gOh"/>
+                            <constraint firstItem="8c8-nM-AF0" firstAttribute="top" secondItem="ryZ-zu-7eM" secondAttribute="bottom" constant="20" id="oDm-ON-CPg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1eZ-CU-lxs" secondAttribute="trailing" constant="20" id="ojS-mf-e0u"/>
                             <constraint firstItem="ryZ-zu-7eM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="pD5-kB-ZFE"/>
                             <constraint firstItem="ryZ-zu-7eM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sZq-S1-Taz"/>
