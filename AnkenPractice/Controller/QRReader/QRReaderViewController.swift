@@ -16,8 +16,13 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
     @IBOutlet weak var middleView: UIView!
     @IBOutlet weak var rightView: UIView!
     
+    private let readAreaX: CGFloat = 0.1
+    private let readAreaY: CGFloat = 0.35
+    private let readAreaWidth: CGFloat = 0.8
+    private let readAreaHeight: CGFloat = 0.3
     
     private var captureSession: AVCaptureSession?
+    private var captureMetadataOutput: AVCaptureMetadataOutput?
     private var videoPreviewLayer:AVCaptureVideoPreviewLayer?
     private var videoDevice: AVCaptureDevice?
     private var qrCodeFrameView: UIView?
@@ -68,7 +73,7 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        // 端末の向きに合わせてカメラの向きとプレビュー画像のサイズを合わせる
+        // 端末の向きに合わせてカメラの向きとプレビュー画面のサイズを合わせる
         let orientation = UIApplication.shared.statusBarOrientation
         
         videoPreviewLayer?.frame = self.view.bounds
@@ -88,12 +93,19 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
         
         if let videoPreviewLayer = self.videoPreviewLayer {
             self.view.layer.addSublayer(videoPreviewLayer)
-            
             // プレビュー画像の前面に設定
             view.bringSubviewToFront(qrCodeFrameView!)
             view.bringSubviewToFront(guideView)
         }
         
+        // 読み取り範囲を設定
+        print("captureMetadataOutput?.rectOfInterest = \(captureMetadataOutput?.rectOfInterest)")
+        print("guideView.bounds = \(self.guideView.bounds)")
+        print("guideView.frame = \(self.guideView.frame)")
+        // 画面の枠線のフレームから比率を取得
+        let rectOfInterest = self.videoPreviewLayer?.metadataOutputRectConverted(fromLayerRect: self.guideView.frame)
+        self.captureMetadataOutput?.rectOfInterest = rectOfInterest!
+        print("captureMetadataOutput?.rectOfInterest = \(captureMetadataOutput?.rectOfInterest)")
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -201,10 +213,10 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
             captureSession?.addInput(input)
             
             // メタデータ（QRコード）をアウトプットに設定
-            let captureMetadataOutput = AVCaptureMetadataOutput()
-            captureSession?.addOutput(captureMetadataOutput)
-            captureMetadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
-            captureMetadataOutput.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
+            self.captureMetadataOutput = AVCaptureMetadataOutput()
+            captureSession?.addOutput(captureMetadataOutput!)
+            self.captureMetadataOutput?.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
+            self.captureMetadataOutput?.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
             
             
             // 画面一杯にカメラ画像を表示
